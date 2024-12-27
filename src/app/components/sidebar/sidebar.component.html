@@ -1,0 +1,16 @@
+<p-menu
+  *ngIf="!config.disabled"
+  [model]="config.items"
+  [style]="{
+    height: '100%',
+    display: (showed$ | async) ? 'block' : 'none'
+  }"
+  [styleClass]="config.class || 'w-56 bg-white shadow-lg p-2 rounded-none'"
+>
+  <ng-template #start>
+    <ng-container #startComponent></ng-container>
+  </ng-template>
+  <ng-template #end>
+    <ng-container #endComponent></ng-container>
+  </ng-template>
+</p-menu>

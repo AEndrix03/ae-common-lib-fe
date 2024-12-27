@@ -1,0 +1,13 @@
+<div class="flex flex-col h-screen">
+  <div #nav>
+    <ae-navbar></ae-navbar>
+  </div>
+  <div class="flex flex-1 overflow-y-auto">
+    <ae-sidebar class="flex-shrink-0"></ae-sidebar>
+    <div class="flex-1 overflow-y-auto">
+      <main class="h-full">
+        <router-outlet></router-outlet>
+      </main>
+    </div>
+  </div>
+</div>

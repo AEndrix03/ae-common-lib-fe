@@ -1,0 +1,13 @@
+<nav *ngIf="!config.disabled">
+  <p-menubar
+    [model]="config.items"
+    [styleClass]="config.class || 'shadow-md relative z-50 rounded-none'"
+  >
+    <ng-template #start>
+      <ng-container #startComponent></ng-container>
+    </ng-template>
+    <ng-template #end>
+      <ng-container #endComponent></ng-container>
+    </ng-template>
+  </p-menubar>
+</nav>
